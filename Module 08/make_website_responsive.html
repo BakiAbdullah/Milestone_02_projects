@@ -1,19 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>7 things to make a website Responsive</title>
+ <style>
+  body {
+   border: 2px solid palevioletred;
+   max-width: 800px;
+   margin: 0 auto;
+  }
+
+  h1 {
+   font-size: 5rem;
+  }
+
+  .fluid-tiger img {
+   width: 100%;
+  }
+
+  .container_two {
+   display: flex;
+  }
+
+  .container_two .split {
+   width: 50%;
+  }
+
+  .split img {
+   width: 100%;
+  }
+
+  @media screen and (max-width: 576px) {
+   .container_two {
+    flex-direction: column;
+   }
+
+   .container_two .split {
+    width: 100%;
+   }
+  }
+ </style>
 </head>
+
 <body>
- <!-- & 7 things to make a website Responsive  -->
+ <!-- * 7 important Things to Make a Website Responsive  -->
  <!-- 1. Viewport meta tag
       2. CSS Relative unit
+      3. Responsive Image (Fluid image) [width: 50% / 100% ;].
+      4. Use max-width and margin auto property in body tag .
+      5. Responsive Split Screen using Flex and width: 50% / 100% ;
+
  -->
 
  <section>
   <h1>My Responsive Website</h1>
  </section>
+ <section class="fluid-tiger">
+  <h3>Tiger</h3>
+  <img src="images/tiger.jpg" alt="">
+ </section>
+
+ <section>
+  <h2>Two Columns</h2>
+  <div class="container_two">
+   <div class="split">
+    <img src="images/tiger.jpg" alt="">
+   </div>
+   <div class="split">
+    <img src="images/food.jpg" alt="">
+   </div>
+  </div>
+ </section>
 </body>
+
 </html>

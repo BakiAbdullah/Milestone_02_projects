@@ -7,22 +7,31 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Simple Responsive Flexbox</title>
  <style>
-
-  * {
-   box-sizing: border-box;
-   /* margin: 0;
-   padding: 0; */
-  }
-
-  .container{
+  .container {
    display: flex;
-   flex-wrap: wrap;
    gap: 10px;
   }
+
   .box {
    height: 200px;
-   width: 700px;
-   background-color: bisque;
+   width: 100%;
+   background-color: rgb(130, 126, 196);
+  }
+
+  /* Maximum width will be (0px - 576px) where the media query will Apply */
+  @media screen and (max-width: 576px) {
+   .container {
+    flex-direction: column;
+   }
+   .box {
+    background-color: rgb(240, 95, 95);
+   }
+  }
+
+  @media screen and (min-width:577px) and (max-width:768px) {
+   .box {
+    background-color: rgb(226, 214, 43);
+   }
   }
  </style>
 </head>

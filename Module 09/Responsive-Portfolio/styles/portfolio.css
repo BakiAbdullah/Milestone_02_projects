@@ -198,16 +198,58 @@ input {
   text-decoration: none;
 }
 
-/* * <<<<<<< Responsive Styles >>>>>>> */
+/* * <<<<<<<<<<<<<<<<<<<<< Responsive Styles >>>>>>>>>>>>>>>>>>>>> */
+
+/* Kaj jeno Easy hoy tai hide class use kre section gula k hide kora hoyechilo.... Must be used !!
 
 .hide {
   display: none;
-}
+} 
+*/
 
-/* ! Media Query for small devices */
+/* ? Media Query for Mobile / Small Devices */
 @media screen and (max-width: 576px) {
+  .header {
+    background-image: none;
+  }
+  .header .btn-primary {
+    font-size: 18px;
+    padding: 5px 25px;
+    height: 40px;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .banner {
+    margin: 0;
+  }
+
+  .banner-sub-title,
+  .banner-title {
+    font-size: 45px;
+    margin: 0 0 8px 0;
+  }
+  .banner-description {
+    font-size: 15px;
+  }
+  nav ul {
+    gap: 40px;
+    margin-top: 30px;
+    padding: 0;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+  }
+
+  nav ul li {
+    margin: 5px 5px;
+  }
+
   .skills-container,
-  .resume-content {
+  .resume-content,
+  .banner,
+  nav {
     flex-direction: column;
     padding: 10px 20px;
   }
@@ -216,7 +258,7 @@ input {
   }
 
   .about {
-    padding: 0 40px;
+    padding: 50px 40px;
     text-align: justify;
   }
 
@@ -237,23 +279,44 @@ input {
   .what-i-do h3 {
     font-size: 2rem;
   }
-  .contact{
+  .contact {
     padding: 10px 50px;
     flex-direction: column;
   }
-  .contact h3{
-   font-size: 1rem;
+  .contact h3 {
+    font-size: 1rem;
   }
-  .contact input[type="text"], input[type="email"], textarea {
+  .contact input[type="text"],
+  input[type="email"],
+  textarea {
     margin-bottom: 15px;
     border: 0;
     width: 100%;
     padding: 0 10px;
-}
+  }
 }
 
-/* ! Media Query for Medium devices */
+/* ????? Media Query for Laptop / Medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
+  nav {
+    padding: 20px 50px;
+    margin-bottom: 10%;
+  }
+
+  .banner img {
+    width: 80%;
+  }
+  .header {
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+
+  .banner {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+  }
   .resume-content {
     gap: 60px;
     padding: 10px 30px;
@@ -272,7 +335,7 @@ input {
     font-size: 1rem;
   }
 
-  .contact{
+  .contact {
     flex-direction: column;
   }
 }

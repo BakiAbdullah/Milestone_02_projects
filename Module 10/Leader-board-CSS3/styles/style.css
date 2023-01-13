@@ -26,17 +26,18 @@ main {
  padding: 5px 0 30px 30px;
 }
 
+.section_title {
+ color: #562EFF;
+ font-size: 24px;
+ margin: 30px 0;
+}
+
 hr {
  border: 1px solid #D1D1D1;
  width: 807px;
  margin-top: 30px;
 }
 /* Top Players Styles */
-.section_title {
- color: #562EFF;
- font-size: 24px;
- margin: 30px 0;
-}
 .players {
  display: grid;
  grid-template-columns: repeat(3, 1fr);
@@ -55,4 +56,14 @@ hr {
 .player_name {
  margin-left: 16px;
  font-size: 18px;
+}
+
+/* Top Blogs Styles */
+.blog_title {
+ color: #000000;
+ font-size: 20px;
+}
+.blog_info {
+ font-size: 16px;
+ color: #562EFF;
 }
